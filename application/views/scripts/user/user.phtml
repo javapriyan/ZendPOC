@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript">
+    
+    function call()
+    {
+        alert('Hi')
+    }
+    
+    
+	
+</script>
+
+
+
+
+
+</head>
+<body onload="Msg1()">
+<div id="pageWrapper">
+<div id="header">
+</div>
+
+    <div id="main">
+        
+        
+        <div id="btns"><p id="ph">Greetings <?php echo $this->name; ?>,We hope our representative addressed your problem, Do u satisfied with our services ?</p>
+    
+    
+    
+    <?php if($this->status):?>
+        
+<script type="text/javascript">
+function Msg1(){
+  document.getElementById('ph').innerHTML = 'You have No new Request, Thanks!';
+}
+</script>
+        
+<form method="POST" action="/index/" >
+        <br><br>
+    <center>	<input id="bt" type="submit" value="Goodbye.!"/> </center>
+    <br>
+    </form></div>
+        
+        
+        
+<?php else: ?>
+<form method="POST" action="/ok/ok/" > <b><center></center> </b><br /><br>
+   
+    
+    <br><br>
+    
+    
+   
+    
+    <center>	<input id="bt" value="Yes,I am Glad"  type="submit"/>  
+        </form>
+<form method="POST" action="/bad/bad/">
+        <br><input id="bt" value="No, i m not" type="submit"/>
+   <?php endif ?>
+    
+     
+</form></center>
+    
+    
+   
+</div>
+    </div>
+<div id="footer">
+<p><center>copyright::Practo.com</center></p>
+</div>
+</div>
+</body>
+</html>

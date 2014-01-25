@@ -1,0 +1,25 @@
+<?php
+
+class UserController extends Zend_Controller_Action
+{
+
+ 	public function indexAction ()
+	 {
+		
+	 }
+	 
+
+    public function userAction()
+    {
+    	$this->_helper->viewRenderer->setViewSuffix('phtml');
+		$this->view->message='i have called';
+               
+       // $msg='Hello Karthikeyan, Welcome';
+       //$this->getResponse()->setHttpResponseCode(200);
+		
+		
+    }
+
+
+}
+
